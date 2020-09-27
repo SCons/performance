@@ -1,0 +1,25 @@
+import os
+import SCons.Defaults
+
+def my_spawn(sh, escape, cmd, args, env):
+    return os.spawnvpe(os.P_WAIT, cmd, args, env)
+
+SCons.Defaults.DefaultEnvironment(tools = [])
+
+env = Environment(ENV = os.environ, tools=['gcc','link','ar'])
+env['CC'] = 'echo'
+env['AR'] = 'echo'
+env['AS'] = 'echo'
+env['RANLIB'] = 'echo'
+env['LD'] = 'echo'
+
+env['SPAWN'] = my_spawn
+
+Export('env')
+
+SConscript(['SConscript', 
+        'd1_0/SConstruct',
+	'd1_1/SConstruct',
+	'd1_2/SConstruct'])
+
+

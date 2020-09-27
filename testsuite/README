@@ -1,0 +1,27 @@
+sconstest - Utils for the SCons testsuite
+v1.0 Dirk Baechle, <dl9obn@darc.de> (2013-07-25) 
+
+1. Prerequisites
+----------------
+
+- Python, with distutils installed
+
+2. Installation
+---------------
+
+Change into the extracted/branched folder, get root (su) and execute the command
+
+  > python setup.py install
+  
+This should add the necessary modules and scripts to your local
+installation.
+
+3. Overview
+-----------
+
+For a more detailed description of this folder's contents, please have a
+peek into the file "README.rst".
+
+
+Have fun!
+

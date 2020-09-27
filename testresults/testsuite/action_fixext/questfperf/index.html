@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Statistics for questfperf</title>
+</head>
+<body>
+<h2>Times</h2>
+<h4>run</h4>
+<table border=1>
+<tr><th>Run</th><th>Elapsed [s]</th><th>User [s]</th><th>System [s]</th></tr>
+<tr><td align="right">1</td><td align="right">1028.8</td><td align="right">794.3</td><td align="right">180.1</td></tr>
+<tr><td align="right">2</td><td align="right">1028.0</td><td align="right">795.4</td><td align="right">180.3</td></tr>
+<tr><td align="right">3</td><td align="right">1027.7</td><td align="right">794.9</td><td align="right">179.7</td></tr>
+<tr><td align="right">Median</td><td align="right">1028.2</td><td align="right">794.9</td><td align="right">180.0</td></tr>
+</table>
+<h4>update</h4>
+<table border=1>
+<tr><th>Run</th><th>Elapsed [s]</th><th>User [s]</th><th>System [s]</th></tr>
+<tr><td align="right">1</td><td align="right">24.1</td><td align="right">22.8</td><td align="right">0.8</td></tr>
+<tr><td align="right">2</td><td align="right">24.1</td><td align="right">22.8</td><td align="right">0.7</td></tr>
+<tr><td align="right">3</td><td align="right">24.2</td><td align="right">22.8</td><td align="right">0.7</td></tr>
+<tr><td align="right">Median</td><td align="right">24.1</td><td align="right">22.8</td><td align="right">0.7</td></tr>
+</table>
+<h4>update_implicit</h4>
+<table border=1>
+<tr><th>Run</th><th>Elapsed [s]</th><th>User [s]</th><th>System [s]</th></tr>
+<tr><td align="right">1</td><td align="right">16.2</td><td align="right">15.9</td><td align="right">0.3</td></tr>
+<tr><td align="right">2</td><td align="right">16.3</td><td align="right">15.9</td><td align="right">0.4</td></tr>
+<tr><td align="right">3</td><td align="right">16.2</td><td align="right">15.9</td><td align="right">0.3</td></tr>
+<tr><td align="right">Median</td><td align="right">16.3</td><td align="right">15.9</td><td align="right">0.3</td></tr>
+</table>
+<h2>Memory</h2>
+<table border=1>
+<tr><th>Run</th><th>Maximum [MByte]</th><th>Graph</th></tr>
+<tr><td align="right">run</td><td align="right">378.9</td><td align="right"><a href="mem1.png">mem1.png</a></td></tr>
+<tr><td align="right">update</td><td align="right">390.9</td><td align="right"><a href="mem_update1.png">mem_update1.png</a></td></tr>
+</table>
+<h2>Profiling</h2>
+<table border=1>
+<tr><th>Run</th><th>Total time [s]</th><th>Graphs</th></tr>
+<tr><td align="right">run</td><td align="right">1125.3</td><td align="right"><a href="prof1.svg">SVG</a>, <a href="prof1.png">PNG</a></td></tr>
+<tr><td align="right">update</td><td align="right">70.6</td><td align="right"><a href="prof_update1.svg">SVG</a>, <a href="prof_update1.png">PNG</a></td></tr>
+<tr><td align="right">update_implicit</td><td align="right">48.9</td><td align="right"><a href="prof_update_implicit1.svg">SVG</a>, <a href="prof_update_implicit1.png">PNG</a></td></tr>
+</table>
+</body>
+</html>

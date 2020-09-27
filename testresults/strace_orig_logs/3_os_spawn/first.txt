@@ -1,0 +1,624 @@
+31543      0.000702 execve("/usr/local/sbin/echo", ["echo", "-o", "\"d1_0/f00002_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00002_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31543      0.000290 execve("/usr/local/bin/echo", ["echo", "-o", "\"d1_0/f00002_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00002_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31543      0.000145 execve("/usr/sbin/echo", ["echo", "-o", "\"d1_0/f00002_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00002_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31543      0.000134 execve("/usr/bin/echo", ["echo", "-o", "\"d1_0/f00002_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00002_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31543      0.000128 execve("/sbin/echo", ["echo", "-o", "\"d1_0/f00002_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00002_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31543      0.000132 execve("/bin/echo", ["echo", "-o", "\"d1_0/f00002_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00002_sconsbld_d1_0.c\""], [/* 21 vars */]) = 0
+31543      0.004754 brk(0)              = 0x13df000
+31543      0.000056 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+31543      0.000058 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f11b849e000
+31543      0.000051 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+31543      0.000052 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+31543      0.000052 fstat(3, {st_mode=S_IFREG|0644, st_size=171326, ...}) = 0
+31543      0.000062 mmap(NULL, 171326, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f11b8474000
+31543      0.000063 close(3)            = 0
+31543      0.000068 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+31543      0.000072 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+31543      0.000075 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\30\2\0\0\0\0\0@\0\0\0\0\0\0\0\370\251\33\0\0\0\0\0\0\0\0\0@\0008\0\n\0@\0#\0\"\0\6\0\0\0\5\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0000\2\0\0\0\0\0\0000\2\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\20K\30\0\0\0\0\0\20K\30\0\0\0\0\0\20K\30\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\34I\33\0\0\0\0\0\34I\33\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\0W\33\0\0\0\0\0\0W;\0\0\0\0\0"..., 832) = 832
+31543      0.000130 fstat(3, {st_mode=S_IFREG|0755, st_size=1815224, ...}) = 0
+31543      0.000096 mmap(NULL, 3929304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f11b7ebe000
+31543      0.000060 mprotect(0x7f11b8073000, 2097152, PROT_NONE) = 0
+31543      0.000056 mmap(0x7f11b8273000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b5000) = 0x7f11b8273000
+31543      0.000074 mmap(0x7f11b8279000, 17624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f11b8279000
+31543      0.000067 close(3)            = 0
+31543      0.000068 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f11b8473000
+31543      0.000064 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f11b8472000
+31543      0.000061 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f11b8471000
+31543      0.000059 arch_prctl(ARCH_SET_FS, 0x7f11b8472700) = 0
+31543      0.000184 mprotect(0x7f11b8273000, 16384, PROT_READ) = 0
+31543      0.000059 mprotect(0x605000, 4096, PROT_READ) = 0
+31543      0.000060 mprotect(0x7f11b84a0000, 4096, PROT_READ) = 0
+31543      0.000057 munmap(0x7f11b8474000, 171326) = 0
+31543      0.000166 brk(0)              = 0x13df000
+31543      0.000050 brk(0x1400000)      = 0x1400000
+31543      0.000069 open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+31543      0.000066 fstat(3, {st_mode=S_IFREG|0644, st_size=4480528, ...}) = 0
+31543      0.000071 mmap(NULL, 4480528, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f11b7a78000
+31543      0.000060 close(3)            = 0
+31543      0.000091 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+31543      0.000071 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f11b7a77000
+31543      0.000064 write(1, "-o \"d1_0/f00002_sconsbld_d1_0.o\" -c -Id1_0/lup000_sconsbld_d1_0 -Id1_0/lup001_sconsbld_d1_0 \"d1_0/f00002_sconsbld_d1_0.c\"\n", 122) = 122
+31543      0.000085 close(1)            = 0
+31543      0.000038 munmap(0x7f11b7a77000, 4096) = 0
+31543      0.000058 close(2)            = 0
+31543      0.000055 exit_group(0)       = ?
+31539      0.000122 <... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 31543
+31539      0.000032 --- SIGCHLD (Child exited) @ 0 (0) ---
+31539      0.000368 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00002_sconsbld_d1_0.o", 0x7fffe9575530) = -1 ENOENT (No such file or directory)
+31539      0.000177 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00002_sconsbld_d1_0.o", 0x7fffe9574fe0) = -1 ENOENT (No such file or directory)
+31539      0.002175 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00003_sconsbld_d1_0.c", {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000126 open("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00003_sconsbld_d1_0.c", O_RDONLY) = 3
+31539      0.000073 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000068 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000066 lseek(3, 0, SEEK_CUR) = 0
+31539      0.000048 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000084 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f81fd21c000
+31539      0.000064 lseek(3, 0, SEEK_CUR) = 0
+31539      0.000057 read(3, "#include <f00003_sconsbld_d1_0.h>\n#include <omega.h>\nextern int printr_f00004_sconsbld_d1_0 (char * fname);\nprintr_f00003_sconsbld_d1_0 (char * fname) {\n    printr_f00004_sconsbld_d1_0 (fname);\n    return (0);\n}\n", 4096) = 212
+31539      0.000094 read(3, "", 4096)   = 0
+31539      0.000056 close(3)            = 0
+31539      0.000058 munmap(0x7f81fd21c000, 4096) = 0
+31539      0.000296 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/lup001_sconsbld_d1_0/f00003_sconsbld_d1_0.h", {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000196 open("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/lup001_sconsbld_d1_0/f00003_sconsbld_d1_0.h", O_RDONLY) = 3
+31539      0.000073 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000071 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000083 lseek(3, 0, SEEK_CUR) = 0
+31539      0.000057 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000068 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f81fd21c000
+31539      0.000058 lseek(3, 0, SEEK_CUR) = 0
+31539      0.000057 read(3, "#ifndef f00003_sconsbld_d1_0\n#define f00003_sconsbld_d1_0 \"sconsbld/d1_0\"\n\n#include \"stdio.h\"\n\n#endif\n", 4096) = 102
+31539      0.000077 read(3, "", 4096)   = 0
+31539      0.000048 close(3)            = 0
+31539      0.000057 munmap(0x7f81fd21c000, 4096) = 0
+31539      0.001101 stat("/usr/local/sbin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000083 stat("/usr/local/bin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000076 stat("/usr/sbin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000074 stat("/usr/bin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000073 stat("/sbin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000065 stat("/bin/echo", {st_mode=S_IFREG|0755, st_size=27024, ...}) = 0
+31539      0.000086 stat("/bin/echo", {st_mode=S_IFREG|0755, st_size=27024, ...}) = 0
+31539      0.000312 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00003_sconsbld_d1_0.c", {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000385 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/lup001_sconsbld_d1_0/f00003_sconsbld_d1_0.h", {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000575 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00003_sconsbld_d1_0.o", 0x7fffe9574ea0) = -1 ENOENT (No such file or directory)
+31539      0.001090 open("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00003_sconsbld_d1_0.c", O_RDONLY) = 3
+31539      0.000071 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000073 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000069 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f81fd21c000
+31539      0.000053 read(3, "#include <f00003_sconsbld_d1_0.h>\n#include <omega.h>\nextern int printr_f00004_sconsbld_d1_0 (char * fname);\nprintr_f00003_sconsbld_d1_0 (char * fname) {\n    printr_f00004_sconsbld_d1_0 (fname);\n    return (0);\n}\n", 65536) = 212
+31539      0.000069 read(3, "", 61440)  = 0
+31539      0.000052 read(3, "", 65536)  = 0
+31539      0.000049 close(3)            = 0
+31539      0.000047 munmap(0x7f81fd21c000, 4096) = 0
+31539      0.000112 open("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/lup001_sconsbld_d1_0/f00003_sconsbld_d1_0.h", O_RDONLY) = 3
+31539      0.000074 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000077 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000068 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f81fd21c000
+31539      0.000062 read(3, "#ifndef f00003_sconsbld_d1_0\n#define f00003_sconsbld_d1_0 \"sconsbld/d1_0\"\n\n#include \"stdio.h\"\n\n#endif\n", 65536) = 102
+31539      0.000072 read(3, "", 61440)  = 0
+31539      0.000067 read(3, "", 65536)  = 0
+31539      0.000059 close(3)            = 0
+31539      0.000054 munmap(0x7f81fd21c000, 4096) = 0
+31539      0.001252 write(1, "echo -o d1_0/f00003_sconsbld_d1_0.o -c -Id1_0/lup000_sconsbld_d1_0 -Id1_0/lup001_sconsbld_d1_0 d1_0/f00003_sconsbld_d1_0.c\n", 123) = 123
+31539      0.000928 clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f81fd1ef9d0) = 31544
+31539      0.004355 wait4(31544,  <unfinished ...>
+31544      0.000011 set_robust_list(0x7f81fd1ef9e0, 0x18) = 0
+31544      0.000685 execve("/usr/local/sbin/echo", ["echo", "-o", "\"d1_0/f00003_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00003_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31544      0.000311 execve("/usr/local/bin/echo", ["echo", "-o", "\"d1_0/f00003_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00003_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31544      0.000173 execve("/usr/sbin/echo", ["echo", "-o", "\"d1_0/f00003_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00003_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31544      0.000148 execve("/usr/bin/echo", ["echo", "-o", "\"d1_0/f00003_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00003_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31544      0.000151 execve("/sbin/echo", ["echo", "-o", "\"d1_0/f00003_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00003_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31544      0.000147 execve("/bin/echo", ["echo", "-o", "\"d1_0/f00003_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00003_sconsbld_d1_0.c\""], [/* 21 vars */]) = 0
+31544      0.003838 brk(0)              = 0x680000
+31544      0.000070 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+31544      0.000064 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe267214000
+31544      0.000052 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+31544      0.000057 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+31544      0.000065 fstat(3, {st_mode=S_IFREG|0644, st_size=171326, ...}) = 0
+31544      0.000071 mmap(NULL, 171326, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fe2671ea000
+31544      0.000048 close(3)            = 0
+31544      0.000036 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+31544      0.000051 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+31544      0.000047 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\30\2\0\0\0\0\0@\0\0\0\0\0\0\0\370\251\33\0\0\0\0\0\0\0\0\0@\0008\0\n\0@\0#\0\"\0\6\0\0\0\5\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0000\2\0\0\0\0\0\0000\2\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\20K\30\0\0\0\0\0\20K\30\0\0\0\0\0\20K\30\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\34I\33\0\0\0\0\0\34I\33\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\0W\33\0\0\0\0\0\0W;\0\0\0\0\0"..., 832) = 832
+31544      0.000113 fstat(3, {st_mode=S_IFREG|0755, st_size=1815224, ...}) = 0
+31544      0.000053 mmap(NULL, 3929304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe266c34000
+31544      0.000037 mprotect(0x7fe266de9000, 2097152, PROT_NONE) = 0
+31544      0.000039 mmap(0x7fe266fe9000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b5000) = 0x7fe266fe9000
+31544      0.000052 mmap(0x7fe266fef000, 17624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe266fef000
+31544      0.000046 close(3)            = 0
+31544      0.000093 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe2671e9000
+31544      0.000042 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe2671e8000
+31544      0.000041 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe2671e7000
+31544      0.000037 arch_prctl(ARCH_SET_FS, 0x7fe2671e8700) = 0
+31544      0.000132 mprotect(0x7fe266fe9000, 16384, PROT_READ) = 0
+31544      0.000040 mprotect(0x605000, 4096, PROT_READ) = 0
+31544      0.000037 mprotect(0x7fe267216000, 4096, PROT_READ) = 0
+31544      0.000035 munmap(0x7fe2671ea000, 171326) = 0
+31544      0.000143 brk(0)              = 0x680000
+31544      0.000032 brk(0x6a1000)       = 0x6a1000
+31544      0.000046 open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+31544      0.000045 fstat(3, {st_mode=S_IFREG|0644, st_size=4480528, ...}) = 0
+31544      0.000052 mmap(NULL, 4480528, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fe2667ee000
+31544      0.000050 close(3)            = 0
+31544      0.000071 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+31544      0.000050 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe2667ed000
+31544      0.000046 write(1, "-o \"d1_0/f00003_sconsbld_d1_0.o\" -c -Id1_0/lup000_sconsbld_d1_0 -Id1_0/lup001_sconsbld_d1_0 \"d1_0/f00003_sconsbld_d1_0.c\"\n", 122) = 122
+31544      0.000072 close(1)            = 0
+31544      0.000031 munmap(0x7fe2667ed000, 4096) = 0
+31544      0.000037 close(2)            = 0
+31544      0.000035 exit_group(0)       = ?
+31539      0.000094 <... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 31544
+31539      0.000021 --- SIGCHLD (Child exited) @ 0 (0) ---
+31539      0.000330 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00003_sconsbld_d1_0.o", 0x7fffe9575530) = -1 ENOENT (No such file or directory)
+31539      0.000156 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00003_sconsbld_d1_0.o", 0x7fffe9574fe0) = -1 ENOENT (No such file or directory)
+31539      0.002161 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00004_sconsbld_d1_0.c", {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000116 open("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00004_sconsbld_d1_0.c", O_RDONLY) = 3
+31539      0.000054 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000051 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000048 lseek(3, 0, SEEK_CUR) = 0
+31539      0.000032 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000048 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f81fd21c000
+31539      0.000037 lseek(3, 0, SEEK_CUR) = 0
+31539      0.000036 read(3, "#include <f00004_sconsbld_d1_0.h>\n#include <omega.h>\nextern int printr_f00005_sconsbld_d1_0 (char * fname);\nprintr_f00004_sconsbld_d1_0 (char * fname) {\n    printr_f00005_sconsbld_d1_0 (fname);\n    return (0);\n}\n", 4096) = 212
+31539      0.000076 read(3, "", 4096)   = 0
+31539      0.000034 close(3)            = 0
+31539      0.000032 munmap(0x7f81fd21c000, 4096) = 0
+31539      0.000286 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/lup001_sconsbld_d1_0/f00004_sconsbld_d1_0.h", {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000191 open("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/lup001_sconsbld_d1_0/f00004_sconsbld_d1_0.h", O_RDONLY) = 3
+31539      0.000055 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000080 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000072 lseek(3, 0, SEEK_CUR) = 0
+31539      0.000056 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000067 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f81fd21c000
+31539      0.000062 lseek(3, 0, SEEK_CUR) = 0
+31539      0.000053 read(3, "#ifndef f00004_sconsbld_d1_0\n#define f00004_sconsbld_d1_0 \"sconsbld/d1_0\"\n\n#include \"stdio.h\"\n\n#endif\n", 4096) = 102
+31539      0.000078 read(3, "", 4096)   = 0
+31539      0.000059 close(3)            = 0
+31539      0.000056 munmap(0x7f81fd21c000, 4096) = 0
+31539      0.001137 stat("/usr/local/sbin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000085 stat("/usr/local/bin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000076 stat("/usr/sbin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000073 stat("/usr/bin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000070 stat("/sbin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000069 stat("/bin/echo", {st_mode=S_IFREG|0755, st_size=27024, ...}) = 0
+31539      0.000087 stat("/bin/echo", {st_mode=S_IFREG|0755, st_size=27024, ...}) = 0
+31539      0.000318 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00004_sconsbld_d1_0.c", {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000383 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/lup001_sconsbld_d1_0/f00004_sconsbld_d1_0.h", {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000931 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00004_sconsbld_d1_0.o", 0x7fffe9574ea0) = -1 ENOENT (No such file or directory)
+31539      0.001059 open("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00004_sconsbld_d1_0.c", O_RDONLY) = 3
+31539      0.000069 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000076 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000069 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f81fd21c000
+31539      0.000052 read(3, "#include <f00004_sconsbld_d1_0.h>\n#include <omega.h>\nextern int printr_f00005_sconsbld_d1_0 (char * fname);\nprintr_f00004_sconsbld_d1_0 (char * fname) {\n    printr_f00005_sconsbld_d1_0 (fname);\n    return (0);\n}\n", 65536) = 212
+31539      0.000074 read(3, "", 61440)  = 0
+31539      0.000054 read(3, "", 65536)  = 0
+31539      0.000049 close(3)            = 0
+31539      0.000047 munmap(0x7f81fd21c000, 4096) = 0
+31539      0.000102 open("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/lup001_sconsbld_d1_0/f00004_sconsbld_d1_0.h", O_RDONLY) = 3
+31539      0.000086 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000079 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000076 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f81fd21c000
+31539      0.000055 read(3, "#ifndef f00004_sconsbld_d1_0\n#define f00004_sconsbld_d1_0 \"sconsbld/d1_0\"\n\n#include \"stdio.h\"\n\n#endif\n", 65536) = 102
+31539      0.000074 read(3, "", 61440)  = 0
+31539      0.000066 read(3, "", 65536)  = 0
+31539      0.000061 close(3)            = 0
+31539      0.000056 munmap(0x7f81fd21c000, 4096) = 0
+31539      0.001251 write(1, "echo -o d1_0/f00004_sconsbld_d1_0.o -c -Id1_0/lup000_sconsbld_d1_0 -Id1_0/lup001_sconsbld_d1_0 d1_0/f00004_sconsbld_d1_0.c\n", 123) = 123
+31539      0.000924 clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f81fd1ef9d0) = 31545
+31539      0.004455 wait4(31545,  <unfinished ...>
+31545      0.000012 set_robust_list(0x7f81fd1ef9e0, 0x18) = 0
+31545      0.000711 execve("/usr/local/sbin/echo", ["echo", "-o", "\"d1_0/f00004_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00004_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31545      0.000311 execve("/usr/local/bin/echo", ["echo", "-o", "\"d1_0/f00004_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00004_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31545      0.000162 execve("/usr/sbin/echo", ["echo", "-o", "\"d1_0/f00004_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00004_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31545      0.000149 execve("/usr/bin/echo", ["echo", "-o", "\"d1_0/f00004_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00004_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31545      0.000148 execve("/sbin/echo", ["echo", "-o", "\"d1_0/f00004_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00004_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31545      0.000144 execve("/bin/echo", ["echo", "-o", "\"d1_0/f00004_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00004_sconsbld_d1_0.c\""], [/* 21 vars */]) = 0
+31545      0.003893 brk(0)              = 0x1a34000
+31545      0.000072 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+31545      0.000072 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffedf87a000
+31545      0.000071 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+31545      0.000075 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+31545      0.000070 fstat(3, {st_mode=S_IFREG|0644, st_size=171326, ...}) = 0
+31545      0.000071 mmap(NULL, 171326, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ffedf850000
+31545      0.000055 close(3)            = 0
+31545      0.000048 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+31545      0.000076 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+31545      0.000071 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\30\2\0\0\0\0\0@\0\0\0\0\0\0\0\370\251\33\0\0\0\0\0\0\0\0\0@\0008\0\n\0@\0#\0\"\0\6\0\0\0\5\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0000\2\0\0\0\0\0\0000\2\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\20K\30\0\0\0\0\0\20K\30\0\0\0\0\0\20K\30\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\34I\33\0\0\0\0\0\34I\33\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\0W\33\0\0\0\0\0\0W;\0\0\0\0\0"..., 832) = 832
+31545      0.000127 fstat(3, {st_mode=S_IFREG|0755, st_size=1815224, ...}) = 0
+31545      0.000076 mmap(NULL, 3929304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ffedf29a000
+31545      0.000063 mprotect(0x7ffedf44f000, 2097152, PROT_NONE) = 0
+31545      0.000063 mmap(0x7ffedf64f000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b5000) = 0x7ffedf64f000
+31545      0.000071 mmap(0x7ffedf655000, 17624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffedf655000
+31545      0.000063 close(3)            = 0
+31545      0.000068 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffedf84f000
+31545      0.000063 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffedf84e000
+31545      0.000057 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffedf84d000
+31545      0.000056 arch_prctl(ARCH_SET_FS, 0x7ffedf84e700) = 0
+31545      0.000150 mprotect(0x7ffedf64f000, 16384, PROT_READ) = 0
+31545      0.000059 mprotect(0x605000, 4096, PROT_READ) = 0
+31545      0.000057 mprotect(0x7ffedf87c000, 4096, PROT_READ) = 0
+31545      0.000052 munmap(0x7ffedf850000, 171326) = 0
+31545      0.000157 brk(0)              = 0x1a34000
+31545      0.000049 brk(0x1a55000)      = 0x1a55000
+31545      0.000061 open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+31545      0.000071 fstat(3, {st_mode=S_IFREG|0644, st_size=4480528, ...}) = 0
+31545      0.000073 mmap(NULL, 4480528, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ffedee54000
+31545      0.000061 close(3)            = 0
+31545      0.000088 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+31545      0.000076 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffedee53000
+31545      0.000069 write(1, "-o \"d1_0/f00004_sconsbld_d1_0.o\" -c -Id1_0/lup000_sconsbld_d1_0 -Id1_0/lup001_sconsbld_d1_0 \"d1_0/f00004_sconsbld_d1_0.c\"\n", 122) = 122
+31545      0.000088 close(1)            = 0
+31545      0.000032 munmap(0x7ffedee53000, 4096) = 0
+31545      0.000049 close(2)            = 0
+31545      0.000058 exit_group(0)       = ?
+31539      0.000105 <... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 31545
+31539      0.000031 --- SIGCHLD (Child exited) @ 0 (0) ---
+31539      0.000321 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00004_sconsbld_d1_0.o", 0x7fffe9575530) = -1 ENOENT (No such file or directory)
+31539      0.000165 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00004_sconsbld_d1_0.o", 0x7fffe9574fe0) = -1 ENOENT (No such file or directory)
+31539      0.002070 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00005_sconsbld_d1_0.c", {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000117 open("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00005_sconsbld_d1_0.c", O_RDONLY) = 3
+31539      0.000068 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000068 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000063 lseek(3, 0, SEEK_CUR) = 0
+31539      0.000058 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000067 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f81fd21c000
+31539      0.000054 lseek(3, 0, SEEK_CUR) = 0
+31539      0.000050 read(3, "#include <f00005_sconsbld_d1_0.h>\n#include <omega.h>\nextern int printr_f00006_sconsbld_d1_0 (char * fname);\nprintr_f00005_sconsbld_d1_0 (char * fname) {\n    printr_f00006_sconsbld_d1_0 (fname);\n    return (0);\n}\n", 4096) = 212
+31539      0.000096 read(3, "", 4096)   = 0
+31539      0.000053 close(3)            = 0
+31539      0.000051 munmap(0x7f81fd21c000, 4096) = 0
+31539      0.000360 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/lup001_sconsbld_d1_0/f00005_sconsbld_d1_0.h", {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000183 open("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/lup001_sconsbld_d1_0/f00005_sconsbld_d1_0.h", O_RDONLY) = 3
+31539      0.000054 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000051 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000048 lseek(3, 0, SEEK_CUR) = 0
+31539      0.000031 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000048 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f81fd21c000
+31539      0.000037 lseek(3, 0, SEEK_CUR) = 0
+31539      0.000034 read(3, "#ifndef f00005_sconsbld_d1_0\n#define f00005_sconsbld_d1_0 \"sconsbld/d1_0\"\n\n#include \"stdio.h\"\n\n#endif\n", 4096) = 102
+31539      0.000057 read(3, "", 4096)   = 0
+31539      0.000034 close(3)            = 0
+31539      0.000032 munmap(0x7f81fd21c000, 4096) = 0
+31539      0.001129 stat("/usr/local/sbin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000068 stat("/usr/local/bin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000055 stat("/usr/sbin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000053 stat("/usr/bin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000052 stat("/sbin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000052 stat("/bin/echo", {st_mode=S_IFREG|0755, st_size=27024, ...}) = 0
+31539      0.000071 stat("/bin/echo", {st_mode=S_IFREG|0755, st_size=27024, ...}) = 0
+31539      0.000306 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00005_sconsbld_d1_0.c", {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000384 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/lup001_sconsbld_d1_0/f00005_sconsbld_d1_0.h", {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000560 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00005_sconsbld_d1_0.o", 0x7fffe9574ea0) = -1 ENOENT (No such file or directory)
+31539      0.001085 open("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00005_sconsbld_d1_0.c", O_RDONLY) = 3
+31539      0.000054 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000056 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000049 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f81fd21c000
+31539      0.000037 read(3, "#include <f00005_sconsbld_d1_0.h>\n#include <omega.h>\nextern int printr_f00006_sconsbld_d1_0 (char * fname);\nprintr_f00005_sconsbld_d1_0 (char * fname) {\n    printr_f00006_sconsbld_d1_0 (fname);\n    return (0);\n}\n", 65536) = 212
+31539      0.000056 read(3, "", 61440)  = 0
+31539      0.000042 read(3, "", 65536)  = 0
+31539      0.000038 close(3)            = 0
+31539      0.000033 munmap(0x7f81fd21c000, 4096) = 0
+31539      0.000110 open("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/lup001_sconsbld_d1_0/f00005_sconsbld_d1_0.h", O_RDONLY) = 3
+31539      0.000053 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000052 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000048 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f81fd21c000
+31539      0.000036 read(3, "#ifndef f00005_sconsbld_d1_0\n#define f00005_sconsbld_d1_0 \"sconsbld/d1_0\"\n\n#include \"stdio.h\"\n\n#endif\n", 65536) = 102
+31539      0.000059 read(3, "", 61440)  = 0
+31539      0.000042 read(3, "", 65536)  = 0
+31539      0.000037 close(3)            = 0
+31539      0.000032 munmap(0x7f81fd21c000, 4096) = 0
+31539      0.001266 write(1, "echo -o d1_0/f00005_sconsbld_d1_0.o -c -Id1_0/lup000_sconsbld_d1_0 -Id1_0/lup001_sconsbld_d1_0 d1_0/f00005_sconsbld_d1_0.c\n", 123) = 123
+31539      0.000942 clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f81fd1ef9d0) = 31546
+31539      0.005266 wait4(31546,  <unfinished ...>
+31546      0.000049 set_robust_list(0x7f81fd1ef9e0, 0x18) = 0
+31546      0.001054 execve("/usr/local/sbin/echo", ["echo", "-o", "\"d1_0/f00005_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00005_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31546      0.000363 execve("/usr/local/bin/echo", ["echo", "-o", "\"d1_0/f00005_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00005_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31546      0.000146 execve("/usr/sbin/echo", ["echo", "-o", "\"d1_0/f00005_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00005_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31546      0.000135 execve("/usr/bin/echo", ["echo", "-o", "\"d1_0/f00005_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00005_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31546      0.000133 execve("/sbin/echo", ["echo", "-o", "\"d1_0/f00005_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00005_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31546      0.000136 execve("/bin/echo", ["echo", "-o", "\"d1_0/f00005_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00005_sconsbld_d1_0.c\""], [/* 21 vars */]) = 0
+31546      0.004666 brk(0)              = 0x182f000
+31546      0.000074 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+31546      0.000073 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f43e91a3000
+31546      0.000070 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+31546      0.000069 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+31546      0.000068 fstat(3, {st_mode=S_IFREG|0644, st_size=171326, ...}) = 0
+31546      0.000076 mmap(NULL, 171326, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f43e9179000
+31546      0.000054 close(3)            = 0
+31546      0.000056 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+31546      0.000068 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+31546      0.000064 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\30\2\0\0\0\0\0@\0\0\0\0\0\0\0\370\251\33\0\0\0\0\0\0\0\0\0@\0008\0\n\0@\0#\0\"\0\6\0\0\0\5\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0000\2\0\0\0\0\0\0000\2\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\20K\30\0\0\0\0\0\20K\30\0\0\0\0\0\20K\30\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\34I\33\0\0\0\0\0\34I\33\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\0W\33\0\0\0\0\0\0W;\0\0\0\0\0"..., 832) = 832
+31546      0.000126 fstat(3, {st_mode=S_IFREG|0755, st_size=1815224, ...}) = 0
+31546      0.000072 mmap(NULL, 3929304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f43e8bc3000
+31546      0.000052 mprotect(0x7f43e8d78000, 2097152, PROT_NONE) = 0
+31546      0.000058 mmap(0x7f43e8f78000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b5000) = 0x7f43e8f78000
+31546      0.000062 mmap(0x7f43e8f7e000, 17624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f43e8f7e000
+31546      0.000076 close(3)            = 0
+31546      0.000086 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f43e9178000
+31546      0.000044 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f43e9177000
+31546      0.000041 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f43e9176000
+31546      0.000055 arch_prctl(ARCH_SET_FS, 0x7f43e9177700) = 0
+31546      0.000169 mprotect(0x7f43e8f78000, 16384, PROT_READ) = 0
+31546      0.000067 mprotect(0x605000, 4096, PROT_READ) = 0
+31546      0.000064 mprotect(0x7f43e91a5000, 4096, PROT_READ) = 0
+31546      0.000060 munmap(0x7f43e9179000, 171326) = 0
+31546      0.000162 brk(0)              = 0x182f000
+31546      0.000059 brk(0x1850000)      = 0x1850000
+31546      0.000069 open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+31546      0.000070 fstat(3, {st_mode=S_IFREG|0644, st_size=4480528, ...}) = 0
+31546      0.000074 mmap(NULL, 4480528, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f43e877d000
+31546      0.000061 close(3)            = 0
+31546      0.000094 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+31546      0.000076 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f43e877c000
+31546      0.000070 write(1, "-o \"d1_0/f00005_sconsbld_d1_0.o\" -c -Id1_0/lup000_sconsbld_d1_0 -Id1_0/lup001_sconsbld_d1_0 \"d1_0/f00005_sconsbld_d1_0.c\"\n", 122) = 122
+31546      0.000085 close(1)            = 0
+31546      0.000032 munmap(0x7f43e877c000, 4096) = 0
+31546      0.000059 close(2)            = 0
+31546      0.000060 exit_group(0)       = ?
+31539      0.000112 <... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 31546
+31539      0.000035 --- SIGCHLD (Child exited) @ 0 (0) ---
+31539      0.000343 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00005_sconsbld_d1_0.o", 0x7fffe9575530) = -1 ENOENT (No such file or directory)
+31539      0.000176 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00005_sconsbld_d1_0.o", 0x7fffe9574fe0) = -1 ENOENT (No such file or directory)
+31539      0.002047 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00006_sconsbld_d1_0.c", {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000143 open("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00006_sconsbld_d1_0.c", O_RDONLY) = 3
+31539      0.000076 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000077 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000071 lseek(3, 0, SEEK_CUR) = 0
+31539      0.000053 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000075 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f81fd21c000
+31539      0.000063 lseek(3, 0, SEEK_CUR) = 0
+31539      0.000057 read(3, "#include <f00006_sconsbld_d1_0.h>\n#include <omega.h>\nextern int printr_f00007_sconsbld_d1_0 (char * fname);\nprintr_f00006_sconsbld_d1_0 (char * fname) {\n    printr_f00007_sconsbld_d1_0 (fname);\n    return (0);\n}\n", 4096) = 212
+31539      0.000091 read(3, "", 4096)   = 0
+31539      0.000060 close(3)            = 0
+31539      0.000060 munmap(0x7f81fd21c000, 4096) = 0
+31539      0.000293 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/lup001_sconsbld_d1_0/f00006_sconsbld_d1_0.h", {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000190 open("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/lup001_sconsbld_d1_0/f00006_sconsbld_d1_0.h", O_RDONLY) = 3
+31539      0.000071 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000074 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000074 lseek(3, 0, SEEK_CUR) = 0
+31539      0.000055 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000071 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f81fd21c000
+31539      0.000062 lseek(3, 0, SEEK_CUR) = 0
+31539      0.000061 read(3, "#ifndef f00006_sconsbld_d1_0\n#define f00006_sconsbld_d1_0 \"sconsbld/d1_0\"\n\n#include \"stdio.h\"\n\n#endif\n", 4096) = 102
+31539      0.000089 read(3, "", 4096)   = 0
+31539      0.000053 close(3)            = 0
+31539      0.000058 munmap(0x7f81fd21c000, 4096) = 0
+31539      0.001093 stat("/usr/local/sbin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000081 stat("/usr/local/bin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000072 stat("/usr/sbin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000073 stat("/usr/bin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000070 stat("/sbin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000069 stat("/bin/echo", {st_mode=S_IFREG|0755, st_size=27024, ...}) = 0
+31539      0.000083 stat("/bin/echo", {st_mode=S_IFREG|0755, st_size=27024, ...}) = 0
+31539      0.000310 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00006_sconsbld_d1_0.c", {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000386 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/lup001_sconsbld_d1_0/f00006_sconsbld_d1_0.h", {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000579 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00006_sconsbld_d1_0.o", 0x7fffe9574ea0) = -1 ENOENT (No such file or directory)
+31539      0.001088 open("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00006_sconsbld_d1_0.c", O_RDONLY) = 3
+31539      0.000069 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000074 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000070 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f81fd21c000
+31539      0.000056 read(3, "#include <f00006_sconsbld_d1_0.h>\n#include <omega.h>\nextern int printr_f00007_sconsbld_d1_0 (char * fname);\nprintr_f00006_sconsbld_d1_0 (char * fname) {\n    printr_f00007_sconsbld_d1_0 (fname);\n    return (0);\n}\n", 65536) = 212
+31539      0.000073 read(3, "", 61440)  = 0
+31539      0.003151 read(3, "", 65536)  = 0
+31539      0.000069 close(3)            = 0
+31539      0.000034 munmap(0x7f81fd21c000, 4096) = 0
+31539      0.000089 open("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/lup001_sconsbld_d1_0/f00006_sconsbld_d1_0.h", O_RDONLY) = 3
+31539      0.000052 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000052 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000048 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f81fd21c000
+31539      0.000035 read(3, "#ifndef f00006_sconsbld_d1_0\n#define f00006_sconsbld_d1_0 \"sconsbld/d1_0\"\n\n#include \"stdio.h\"\n\n#endif\n", 65536) = 102
+31539      0.000046 read(3, "", 61440)  = 0
+31539      0.000042 read(3, "", 65536)  = 0
+31539      0.000036 close(3)            = 0
+31539      0.000032 munmap(0x7f81fd21c000, 4096) = 0
+31539      0.001297 write(1, "echo -o d1_0/f00006_sconsbld_d1_0.o -c -Id1_0/lup000_sconsbld_d1_0 -Id1_0/lup001_sconsbld_d1_0 d1_0/f00006_sconsbld_d1_0.c\n", 123) = 123
+31539      0.004712 clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f81fd1ef9d0) = 31547
+31547      0.005021 set_robust_list(0x7f81fd1ef9e0, 0x18) = 0
+31539      0.000095 wait4(31547,  <unfinished ...>
+31547      0.001050 execve("/usr/local/sbin/echo", ["echo", "-o", "\"d1_0/f00006_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00006_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31547      0.000314 execve("/usr/local/bin/echo", ["echo", "-o", "\"d1_0/f00006_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00006_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31547      0.000164 execve("/usr/sbin/echo", ["echo", "-o", "\"d1_0/f00006_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00006_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31547      0.000147 execve("/usr/bin/echo", ["echo", "-o", "\"d1_0/f00006_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00006_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31547      0.000161 execve("/sbin/echo", ["echo", "-o", "\"d1_0/f00006_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00006_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31547      0.000145 execve("/bin/echo", ["echo", "-o", "\"d1_0/f00006_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00006_sconsbld_d1_0.c\""], [/* 21 vars */]) = 0
+31547      0.004211 brk(0)              = 0x9bd000
+31547      0.000078 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+31547      0.000068 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4c2c983000
+31547      0.000069 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+31547      0.000065 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+31547      0.000062 fstat(3, {st_mode=S_IFREG|0644, st_size=171326, ...}) = 0
+31547      0.000073 mmap(NULL, 171326, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f4c2c959000
+31547      0.000051 close(3)            = 0
+31547      0.000051 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+31547      0.000065 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+31547      0.000056 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\30\2\0\0\0\0\0@\0\0\0\0\0\0\0\370\251\33\0\0\0\0\0\0\0\0\0@\0008\0\n\0@\0#\0\"\0\6\0\0\0\5\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0000\2\0\0\0\0\0\0000\2\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\20K\30\0\0\0\0\0\20K\30\0\0\0\0\0\20K\30\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\34I\33\0\0\0\0\0\34I\33\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\0W\33\0\0\0\0\0\0W;\0\0\0\0\0"..., 832) = 832
+31547      0.000118 fstat(3, {st_mode=S_IFREG|0755, st_size=1815224, ...}) = 0
+31547      0.000075 mmap(NULL, 3929304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4c2c3a3000
+31547      0.000064 mprotect(0x7f4c2c558000, 2097152, PROT_NONE) = 0
+31547      0.000064 mmap(0x7f4c2c758000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b5000) = 0x7f4c2c758000
+31547      0.000073 mmap(0x7f4c2c75e000, 17624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f4c2c75e000
+31547      0.000062 close(3)            = 0
+31547      0.000070 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4c2c958000
+31547      0.000065 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4c2c957000
+31547      0.000065 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4c2c956000
+31547      0.000056 arch_prctl(ARCH_SET_FS, 0x7f4c2c957700) = 0
+31547      0.000156 mprotect(0x7f4c2c758000, 16384, PROT_READ) = 0
+31547      0.000065 mprotect(0x605000, 4096, PROT_READ) = 0
+31547      0.000062 mprotect(0x7f4c2c985000, 4096, PROT_READ) = 0
+31547      0.000061 munmap(0x7f4c2c959000, 171326) = 0
+31547      0.000158 brk(0)              = 0x9bd000
+31547      0.000059 brk(0x9de000)       = 0x9de000
+31547      0.000068 open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+31547      0.000069 fstat(3, {st_mode=S_IFREG|0644, st_size=4480528, ...}) = 0
+31547      0.000070 mmap(NULL, 4480528, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f4c2bf5d000
+31547      0.000063 close(3)            = 0
+31547      0.000091 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+31547      0.000077 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4c2bf5c000
+31547      0.000067 write(1, "-o \"d1_0/f00006_sconsbld_d1_0.o\" -c -Id1_0/lup000_sconsbld_d1_0 -Id1_0/lup001_sconsbld_d1_0 \"d1_0/f00006_sconsbld_d1_0.c\"\n", 122) = 122
+31547      0.000085 close(1)            = 0
+31547      0.000033 munmap(0x7f4c2bf5c000, 4096) = 0
+31547      0.000070 close(2)            = 0
+31547      0.000061 exit_group(0)       = ?
+31539      0.000106 <... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 31547
+31539      0.000032 --- SIGCHLD (Child exited) @ 0 (0) ---
+31539      0.000337 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00006_sconsbld_d1_0.o", 0x7fffe9575530) = -1 ENOENT (No such file or directory)
+31539      0.000180 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00006_sconsbld_d1_0.o", 0x7fffe9574fe0) = -1 ENOENT (No such file or directory)
+31539      0.002122 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00007_sconsbld_d1_0.c", {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000124 open("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00007_sconsbld_d1_0.c", O_RDONLY) = 3
+31539      0.000075 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000076 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000075 lseek(3, 0, SEEK_CUR) = 0
+31539      0.000052 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000075 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f81fd21c000
+31539      0.000061 lseek(3, 0, SEEK_CUR) = 0
+31539      0.000062 read(3, "#include <f00007_sconsbld_d1_0.h>\n#include <omega.h>\nextern int printr_f00008_sconsbld_d1_0 (char * fname);\nprintr_f00007_sconsbld_d1_0 (char * fname) {\n    printr_f00008_sconsbld_d1_0 (fname);\n    return (0);\n}\n", 4096) = 212
+31539      0.000088 read(3, "", 4096)   = 0
+31539      0.000058 close(3)            = 0
+31539      0.000059 munmap(0x7f81fd21c000, 4096) = 0
+31539      0.000290 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/lup001_sconsbld_d1_0/f00007_sconsbld_d1_0.h", {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000191 open("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/lup001_sconsbld_d1_0/f00007_sconsbld_d1_0.h", O_RDONLY) = 3
+31539      0.000075 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000072 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000067 lseek(3, 0, SEEK_CUR) = 0
+31539      0.000057 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000075 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f81fd21c000
+31539      0.000057 lseek(3, 0, SEEK_CUR) = 0
+31539      0.000060 read(3, "#ifndef f00007_sconsbld_d1_0\n#define f00007_sconsbld_d1_0 \"sconsbld/d1_0\"\n\n#include \"stdio.h\"\n\n#endif\n", 4096) = 102
+31539      0.000078 read(3, "", 4096)   = 0
+31539      0.000057 close(3)            = 0
+31539      0.000059 munmap(0x7f81fd21c000, 4096) = 0
+31539      0.001074 stat("/usr/local/sbin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000074 stat("/usr/local/bin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000068 stat("/usr/sbin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000066 stat("/usr/bin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000060 stat("/sbin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000060 stat("/bin/echo", {st_mode=S_IFREG|0755, st_size=27024, ...}) = 0
+31539      0.000094 stat("/bin/echo", {st_mode=S_IFREG|0755, st_size=27024, ...}) = 0
+31539      0.000308 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00007_sconsbld_d1_0.c", {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000377 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/lup001_sconsbld_d1_0/f00007_sconsbld_d1_0.h", {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000585 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00007_sconsbld_d1_0.o", 0x7fffe9574ea0) = -1 ENOENT (No such file or directory)
+31539      0.001106 open("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00007_sconsbld_d1_0.c", O_RDONLY) = 3
+31539      0.000054 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000060 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000057 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f81fd21c000
+31539      0.000038 read(3, "#include <f00007_sconsbld_d1_0.h>\n#include <omega.h>\nextern int printr_f00008_sconsbld_d1_0 (char * fname);\nprintr_f00007_sconsbld_d1_0 (char * fname) {\n    printr_f00008_sconsbld_d1_0 (fname);\n    return (0);\n}\n", 65536) = 212
+31539      0.000056 read(3, "", 61440)  = 0
+31539      0.000043 read(3, "", 65536)  = 0
+31539      0.000039 close(3)            = 0
+31539      0.000033 munmap(0x7f81fd21c000, 4096) = 0
+31539      0.000082 open("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/lup001_sconsbld_d1_0/f00007_sconsbld_d1_0.h", O_RDONLY) = 3
+31539      0.000051 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000051 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000048 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f81fd21c000
+31539      0.000035 read(3, "#ifndef f00007_sconsbld_d1_0\n#define f00007_sconsbld_d1_0 \"sconsbld/d1_0\"\n\n#include \"stdio.h\"\n\n#endif\n", 65536) = 102
+31539      0.000045 read(3, "", 61440)  = 0
+31539      0.000041 read(3, "", 65536)  = 0
+31539      0.000037 close(3)            = 0
+31539      0.000032 munmap(0x7f81fd21c000, 4096) = 0
+31539      0.001282 write(1, "echo -o d1_0/f00007_sconsbld_d1_0.o -c -Id1_0/lup000_sconsbld_d1_0 -Id1_0/lup001_sconsbld_d1_0 d1_0/f00007_sconsbld_d1_0.c\n", 123) = 123
+31539      0.000940 clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f81fd1ef9d0) = 31548
+31539      0.005563 wait4(31548,  <unfinished ...>
+31548      0.000012 set_robust_list(0x7f81fd1ef9e0, 0x18) = 0
+31548      0.000847 execve("/usr/local/sbin/echo", ["echo", "-o", "\"d1_0/f00007_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00007_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31548      0.000335 execve("/usr/local/bin/echo", ["echo", "-o", "\"d1_0/f00007_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00007_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31548      0.000166 execve("/usr/sbin/echo", ["echo", "-o", "\"d1_0/f00007_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00007_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31548      0.000149 execve("/usr/bin/echo", ["echo", "-o", "\"d1_0/f00007_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00007_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31548      0.000155 execve("/sbin/echo", ["echo", "-o", "\"d1_0/f00007_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00007_sconsbld_d1_0.c\""], [/* 21 vars */]) = -1 ENOENT (No such file or directory)
+31548      0.000149 execve("/bin/echo", ["echo", "-o", "\"d1_0/f00007_sconsbld_d1_0.o\"", "-c", "-Id1_0/lup000_sconsbld_d1_0", "-Id1_0/lup001_sconsbld_d1_0", "\"d1_0/f00007_sconsbld_d1_0.c\""], [/* 21 vars */]) = 0
+31548      0.004446 brk(0)              = 0xb17000
+31548      0.000075 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+31548      0.000075 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7feecc910000
+31548      0.000071 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+31548      0.000071 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+31548      0.000069 fstat(3, {st_mode=S_IFREG|0644, st_size=171326, ...}) = 0
+31548      0.000079 mmap(NULL, 171326, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7feecc8e6000
+31548      0.000057 close(3)            = 0
+31548      0.000058 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+31548      0.000074 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+31548      0.000065 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\30\2\0\0\0\0\0@\0\0\0\0\0\0\0\370\251\33\0\0\0\0\0\0\0\0\0@\0008\0\n\0@\0#\0\"\0\6\0\0\0\5\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0000\2\0\0\0\0\0\0000\2\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\20K\30\0\0\0\0\0\20K\30\0\0\0\0\0\20K\30\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\34I\33\0\0\0\0\0\34I\33\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\0W\33\0\0\0\0\0\0W;\0\0\0\0\0"..., 832) = 832
+31548      0.000143 fstat(3, {st_mode=S_IFREG|0755, st_size=1815224, ...}) = 0
+31548      0.000075 mmap(NULL, 3929304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7feecc330000
+31548      0.000060 mprotect(0x7feecc4e5000, 2097152, PROT_NONE) = 0
+31548      0.000065 mmap(0x7feecc6e5000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b5000) = 0x7feecc6e5000
+31548      0.000069 mmap(0x7feecc6eb000, 17624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7feecc6eb000
+31548      0.000070 close(3)            = 0
+31548      0.000065 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7feecc8e5000
+31548      0.000066 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7feecc8e4000
+31548      0.000062 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7feecc8e3000
+31548      0.000062 arch_prctl(ARCH_SET_FS, 0x7feecc8e4700) = 0
+31548      0.000150 mprotect(0x7feecc6e5000, 16384, PROT_READ) = 0
+31548      0.000059 mprotect(0x605000, 4096, PROT_READ) = 0
+31548      0.000063 mprotect(0x7feecc912000, 4096, PROT_READ) = 0
+31548      0.000057 munmap(0x7feecc8e6000, 171326) = 0
+31548      0.000164 brk(0)              = 0xb17000
+31548      0.000054 brk(0xb38000)       = 0xb38000
+31548      0.000067 open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+31548      0.000067 fstat(3, {st_mode=S_IFREG|0644, st_size=4480528, ...}) = 0
+31548      0.000067 mmap(NULL, 4480528, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7feecbeea000
+31548      0.000061 close(3)            = 0
+31548      0.000082 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+31548      0.000066 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7feecbee9000
+31548      0.000060 write(1, "-o \"d1_0/f00007_sconsbld_d1_0.o\" -c -Id1_0/lup000_sconsbld_d1_0 -Id1_0/lup001_sconsbld_d1_0 \"d1_0/f00007_sconsbld_d1_0.c\"\n", 122) = 122
+31548      0.000083 close(1)            = 0
+31548      0.000032 munmap(0x7feecbee9000, 4096) = 0
+31548      0.000046 close(2)            = 0
+31548      0.000048 exit_group(0)       = ?
+31539      0.000120 <... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 31548
+31539      0.000033 --- SIGCHLD (Child exited) @ 0 (0) ---
+31539      0.000334 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00007_sconsbld_d1_0.o", 0x7fffe9575530) = -1 ENOENT (No such file or directory)
+31539      0.000170 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00007_sconsbld_d1_0.o", 0x7fffe9574fe0) = -1 ENOENT (No such file or directory)
+31539      0.002087 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00008_sconsbld_d1_0.c", {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000118 open("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00008_sconsbld_d1_0.c", O_RDONLY) = 3
+31539      0.000072 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000072 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000074 lseek(3, 0, SEEK_CUR) = 0
+31539      0.000057 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000075 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f81fd21c000
+31539      0.000056 lseek(3, 0, SEEK_CUR) = 0
+31539      0.000059 read(3, "#include <f00008_sconsbld_d1_0.h>\n#include <omega.h>\nextern int printr_f00009_sconsbld_d1_0 (char * fname);\nprintr_f00008_sconsbld_d1_0 (char * fname) {\n    printr_f00009_sconsbld_d1_0 (fname);\n    return (0);\n}\n", 4096) = 212
+31539      0.000101 read(3, "", 4096)   = 0
+31539      0.000055 close(3)            = 0
+31539      0.000052 munmap(0x7f81fd21c000, 4096) = 0
+31539      0.000288 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/lup001_sconsbld_d1_0/f00008_sconsbld_d1_0.h", {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000181 open("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/lup001_sconsbld_d1_0/f00008_sconsbld_d1_0.h", O_RDONLY) = 3
+31539      0.000091 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000076 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000076 lseek(3, 0, SEEK_CUR) = 0
+31539      0.000057 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000068 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f81fd21c000
+31539      0.000061 lseek(3, 0, SEEK_CUR) = 0
+31539      0.000059 read(3, "#ifndef f00008_sconsbld_d1_0\n#define f00008_sconsbld_d1_0 \"sconsbld/d1_0\"\n\n#include \"stdio.h\"\n\n#endif\n", 4096) = 102
+31539      0.000080 read(3, "", 4096)   = 0
+31539      0.000052 close(3)            = 0
+31539      0.000060 munmap(0x7f81fd21c000, 4096) = 0
+31539      0.001089 stat("/usr/local/sbin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000079 stat("/usr/local/bin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000075 stat("/usr/sbin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000070 stat("/usr/bin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000069 stat("/sbin/echo", 0x7fffe9574f80) = -1 ENOENT (No such file or directory)
+31539      0.000073 stat("/bin/echo", {st_mode=S_IFREG|0755, st_size=27024, ...}) = 0
+31539      0.000082 stat("/bin/echo", {st_mode=S_IFREG|0755, st_size=27024, ...}) = 0
+31539      0.000310 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00008_sconsbld_d1_0.c", {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000384 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/lup001_sconsbld_d1_0/f00008_sconsbld_d1_0.h", {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000633 stat("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00008_sconsbld_d1_0.o", 0x7fffe9574ea0) = -1 ENOENT (No such file or directory)
+31539      0.001105 open("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/f00008_sconsbld_d1_0.c", O_RDONLY) = 3
+31539      0.000078 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000077 fstat(3, {st_mode=S_IFREG|0664, st_size=212, ...}) = 0
+31539      0.000076 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f81fd21c000
+31539      0.000063 read(3, "#include <f00008_sconsbld_d1_0.h>\n#include <omega.h>\nextern int printr_f00009_sconsbld_d1_0 (char * fname);\nprintr_f00008_sconsbld_d1_0 (char * fname) {\n    printr_f00009_sconsbld_d1_0 (fname);\n    return (0);\n}\n", 65536) = 212
+31539      0.000079 read(3, "", 61440)  = 0
+31539      0.000062 read(3, "", 65536)  = 0
+31539      0.000063 close(3)            = 0
+31539      0.000059 munmap(0x7f81fd21c000, 4096) = 0
+31539      0.000095 open("/home/dirk/workspace/scons_testsuite/sconsbld/d1_0/lup001_sconsbld_d1_0/f00008_sconsbld_d1_0.h", O_RDONLY) = 3
+31539      0.000074 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000076 fstat(3, {st_mode=S_IFREG|0664, st_size=102, ...}) = 0
+31539      0.000071 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f81fd21c000
+31539      0.000062 read(3, "#ifndef f00008_sconsbld_d1_0\n#define f00008_sconsbld_d1_0 \"sconsbld/d1_0\"\n\n#include \"stdio.h\"\n\n#endif\n", 65536) = 102
+31539      0.000068 read(3, "", 61440)  = 0
+31539      0.000062 read(3, "", 65536)  = 0
+31539      0.000062 close(3)            = 0
+31539      0.000055 munmap(0x7f81fd21c000, 4096) = 0
+31539      0.001245 write(1, "echo -o d1_0/f00008_sconsbld_d1_0.o -c -Id1_0/lup000_sconsbld_d1_0 -Id1_0/lup001_sconsbld_d1_0 d1_0/f00008_sconsbld_d1_0.c\n", 123) = 123
+31539      0.000949 clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f81fd1ef9d0) = 31549
+31539      0.005042 wait4(31549,  <unfinished ...>
+31549      0.000044 set_robust_list(0x7f81fd1ef9e0, 0x18) = 0

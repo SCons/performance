@@ -1,0 +1,64 @@
+diff -r c3cba851cb78 src/engine/SCons/Builder.py
+--- a/src/engine/SCons/Builder.py	Fri Feb 14 21:42:39 2014 +0100
++++ b/src/engine/SCons/Builder.py	Sun Mar 02 18:35:09 2014 +0100
+@@ -312,8 +312,9 @@
+                     msg = "Two different target lists have a target in common: %s  (from %s and from %s)" % (t, list(map(str, t.get_executor().get_all_targets())), list(map(str, tlist)))
+                     raise UserError(msg)
+             elif t.sources != slist:
+-                msg = "Multiple ways to build the same target were specified for: %s  (from %s and from %s)" % (t, list(map(str, t.sources)), list(map(str, slist)))
+-                raise UserError(msg)
++                if not t.builder.zipdep:
++                    msg = "Multiple ways to build the same target were specified for: %s  (from %s and from %s)" % (t, list(map(str, t.sources)), list(map(str, slist)))
++                    raise UserError(msg)
+ 
+     if builder.single_source:
+         if len(slist) > 1:
+@@ -376,6 +377,7 @@
+                         is_explicit = 1,
+                         src_builder = None,
+                         ensure_suffix = False,
++                        zipdep = False,
+                         **overrides):
+         if SCons.Debug.track_instances: logInstanceCreation(self, 'Builder.BuilderBase')
+         self._memo = {}
+@@ -388,6 +390,7 @@
+             suffix = CallableSelector(suffix)
+         self.env = env
+         self.single_source = single_source
++        self.zipdep = zipdep
+         if 'overrides' in overrides:
+             SCons.Warnings.warn(SCons.Warnings.DeprecatedBuilderKeywordsWarning,
+                 "The \"overrides\" keyword to Builder() creation has been deprecated;\n" +\
+@@ -592,13 +595,25 @@
+                 SCons.Executor.AddBatchExecutor(key, executor)
+ 
+         # Now set up the relevant information in the target Nodes themselves.
+-        for t in tlist:
+-            t.cwd = env.fs.getcwd()
+-            t.builder_set(self)
+-            t.env_set(env)
+-            t.add_source(slist)
+-            t.set_executor(executor)
+-            t.set_explicit(self.is_explicit)
++        if not self.zipdep or (len(tlist) != len(slist)):
++            # Standard case: every target depends on *all* sources
++            for t in tlist:
++                t.cwd = env.fs.getcwd()
++                t.builder_set(self)
++                t.env_set(env)
++                t.add_source(slist)
++                t.set_executor(executor)
++                t.set_explicit(self.is_explicit)
++        else:
++            # Batch processing: every target only depends on the
++            # corresponding source file
++            for t, s in zip(tlist, slist):
++                t.cwd = env.fs.getcwd()
++                t.builder_set(self)
++                t.env_set(env)
++                t.set_specific_source([s])
++                t.set_executor(executor)
++                t.set_explicit(self.is_explicit)
+ 
+         return SCons.Node.NodeList(tlist)
+ 

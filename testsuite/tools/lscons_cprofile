@@ -1,0 +1,23 @@
+#!/bin/bash
+
+MYSCONS=$2
+export SCONS_LIB_DIR=$MYSCONS/engine
+CPROFILE=/usr/lib/python2.7/cProfile.py
+
+if [ -f $CPROFILE ]
+then
+  if [ -f $MYSCONS/script/scons.py ]
+  then
+    $CPROFILE -o $1 $MYSCONS/script/scons.py $3 $4 $5 $6 $7 $8 $9
+  else
+    if [ -f $MYSCONS/script/scons ]
+    then
+      $CPROFILE -o $1 $MYSCONS/script/scons $3 $4 $5 $6 $7 $8 $9
+    else
+      echo "No SCons script found in '$MYSCONS/script'!"
+    fi
+  fi
+else
+  echo "No cProfile.py found at '$CPROFILE'!"
+fi
+

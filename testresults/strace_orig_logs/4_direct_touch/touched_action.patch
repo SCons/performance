@@ -1,0 +1,38 @@
+# HG changeset patch
+# Parent d53323337b3accbe3b88280fd0597580a1b5e894
+diff -r d53323337b3a -r 1fc40f790145 src/engine/SCons/Action.py
+--- a/src/engine/SCons/Action.py	Sun Jan 05 13:27:10 2014 +0100
++++ b/src/engine/SCons/Action.py	Thu Jan 09 09:16:10 2014 +0100
+@@ -801,17 +801,22 @@
+             source = executor.get_all_sources()
+         cmd_list, ignore, silent = self.process(target, list(map(rfile, source)), env, executor)
+ 
++        for t in target:
++            tf = open(str(t),"w")
++            tf.write("\n")
++            tf.close()
++
+         # Use len() to filter out any "command" that's zero-length.
+-        for cmd_line in filter(len, cmd_list):
+-            # Escape the command line for the interpreter we are using.
+-            cmd_line = escape_list(cmd_line, escape)
+-            result = spawn(shell, escape, cmd_line[0], cmd_line, ENV)
+-            if not ignore and result:
+-                msg = "Error %s" % result
+-                return SCons.Errors.BuildError(errstr=msg,
+-                                               status=result,
+-                                               action=self,
+-                                               command=cmd_line)
++        #for cmd_line in filter(len, cmd_list):
++        #    # Escape the command line for the interpreter we are using.
++        #    cmd_line = escape_list(cmd_line, escape)
++        #    result = spawn(shell, escape, cmd_line[0], cmd_line, ENV)
++        #    if not ignore and result:
++        #        msg = "Error %s" % result
++        #        return SCons.Errors.BuildError(errstr=msg,
++        #                                       status=result,
++        #                                       action=self,
++        #                                       command=cmd_line)
+         return 0
+ 
+     def get_presig(self, target, source, env, executor=None):

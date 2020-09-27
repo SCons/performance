@@ -1,0 +1,20 @@
+import os
+import SCons.Defaults
+
+SCons.Defaults.DefaultEnvironment(tools = [])
+
+env = Environment(ENV = os.environ, tools=['gcc','link','ar'])
+env['CC'] = 'echo'
+env['AR'] = 'echo'
+env['AS'] = 'echo'
+env['RANLIB'] = 'echo'
+env['LD'] = 'echo'
+
+Export('env')
+
+SConscript(['SConscript', 
+        'd1_0/SConstruct',
+	'd1_1/SConstruct',
+	'd1_2/SConstruct'])
+
+
